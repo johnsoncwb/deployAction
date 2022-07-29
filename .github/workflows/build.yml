@@ -65,6 +65,7 @@ jobs:
           keyAlias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          buildToolsVersion: 30.0.2
 
       ## Distribute app to Firebase App Distribution for testing / use google play internal track if you have a google play account
       - name: upload artifact to Firebase App Distribution
