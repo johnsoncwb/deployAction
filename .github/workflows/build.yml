@@ -1,7 +1,8 @@
 name: Android Build ## name of the workflow
 
 on:
-  - repository_dispatch
+  repository_dispatch:
+    types: [android_build]
 
 jobs:
   android-build:
